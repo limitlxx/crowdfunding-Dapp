@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import "@rainbow-me/rainbowkit/styles.css";
+import { Provider } from "./provider";
+
+import NavLinks from "@/app/components/header"
+import FootLinks from "@/app/components/footer"
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+     
+        <Provider>
+        <NavLinks />
+          {children}
+
+          <FootLinks />
+        </Provider>
+      </body>
     </html>
   );
 }
