@@ -147,12 +147,7 @@ export default function Page() {
                                     </div>
 
                                     <div className="flex items-center justify-end gap-x-6">
-                                        <button type="button"
-                                            onClick={() => setOpen(true)} // Open drawer when button is clicked
-                                            className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
-                                        >
-                                            Add Campaign
-                                        </button>
+                                        
                                         <Dialog open={open} onClose={setOpen} className="relative z-10">
                                             <DialogBackdrop
                                                 transition
