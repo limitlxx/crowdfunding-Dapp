@@ -4,8 +4,7 @@ import { useAccount } from 'wagmi';
 
 const navigation = [ 
     { name: 'Home', href: '/', current: false },
-    { name: 'Campaigns', href: '/campaigns', current: false },
-    { name: 'Github', href: 'https://github.com', current: false },
+    { name: 'Github', href: 'https://github.com/limitlxx/crowdfunding-Dapp', current: false },
     
 ];
 
